@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>行内标签</title>
+</head>
+<body>
+	<h1>超链接</h1>
+	<a href="https://www.baidu.com">百度</a>
+	<a href="https://www.baidu.com">百度1</a>
+	<a href="https://www.liukai.asia">我的博客</a>
+	<a href="https://www.liukai.asia" target="_blank">我的博客(新窗口)</a>
+	<a href="image.jpg" >图片跳转展示</a>
+	<a href="image.jpg" download="a.jpg">图片下载</a>
+	<br><br><br><br>
+
+
+	<h1>input标签</h1>
+	<form action="/xxx" method="get" name="form1">
+	<label for="text">提示词</label>
+	<input id="text" type="text" placeholder="提示词" value="ff" name="name" disabled></input>
+	<br>
+	<input type="text" placeholder="请输入用户名"></input>
+	<br>
+	<input type="password" placeholder="请输入密码"></input>
+	<br>
+	<input type="button" value="按钮"></input>
+	<br>
+	<input type="submit" value="提交" ></input>
+	<br>
+	<input type="reset" value="重置"></input>
+	<br>
+	<input type="checkbox" name="sc" value="td" >土豆</input>
+	<input type="checkbox" name="sc" value="hg" >黄瓜</input>
+	<br>
+	<input type="radio" name="sg" value="pg" >苹果</input>
+	<input type="radio" name="sg" >香蕉</input>
+	<br>
+	<input type="date" name="date">日期</input>
+	<br>
+	<input type="hidden" name="hidden">隐藏域</input>
+	<br>
+	<label for="file">选择文件</label>
+	<input id="file" type="file" style="display: none;" name="file">文件</input>
+	<br>
+	<input type="color" name="color">颜色</input>
+	<br><br><br><br>
+
+	<h1>下拉标签</h1>
+	<select name="select">
+		<option value="1" >A</option>
+		<option value="2">B</option>
+		<option value="3">C</option>
+		<option value="4">D</option>
+		<option value="5">E</option>
+	</select>
+	<h2>多选标签</h2>
+	<select name="select1" multiple>
+		<option value="1">A</option>
+		<option value="2">B</option>
+		<option value="3">C</option>
+		<option value="4">D</option>
+		<option value="5">E</option>
+		<option value="6">可多选</option>
+	</select>
+	</form>
+	<br><br><br><br><br>
+	<h1>图片</h1>
+	<img src="image.jpg" width="300" height="300" alt="错误的图片"></img>
+	<img src="image.jpg" width="200" height="200" alt="错误的图片"></img>
+	<img src="image.jpg" width="100" height="100" alt="错误的图片"></img>
+	<img src="image1.jpg" width="300" height="300" alt="错误的图片"></img>
+	<br><br><br><br>
+	<h1>span</h1>
+	<p>这是一个 <span style="color: red;">红色</span> 的单词。</p>
+</body>
+</html>

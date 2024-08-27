@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>css选择器</title>
+	<style>
+		#box{
+			color: red;
+		}
+		.footer{
+			background-color: blue;
+			color: aliceblue;
+		}
+		.red{
+			color: red;
+		}
+		h2{
+			color: aqua;
+		}
+		a[href]{
+			color: red;
+		}
+		a[href="https://baidu.com"]{
+			color: wheat;
+		}
+	</style>
+</head>
+<body>
+	<h1>id选择器 唯一的</h1>
+	<div id="box">box</div>
+	
+	<br><br><br><br>
+
+	<h1>类选择器</h1>
+	<div class="footer">footer</div>
+	<div class="footer red">footer</div>
+
+	<br><br><br><br>
+
+	<h1>标签选择器</h1>
+	<h2>你好</h2>
+
+	<br><br><br><br>
+
+	<h1>属性选择器</h1>
+	<a href="https://liukai.asia">liukai.asia</a>
+	<a href="https://baidu.com">百度</a>
+	<a>liukai.asia没有herf</a>
+	
+	<br><br><br><br>
+
+	<h1>通用选择器</h1>
+	
+</body>
+</html>
