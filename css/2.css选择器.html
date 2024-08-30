@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>css选择器</title>
+
 	<style>
 		#box{
 			color: red;
@@ -23,6 +24,53 @@
 		}
 		a[href="https://baidu.com"]{
 			color: wheat;
+		}
+		<!-- 后代选择器-->
+		.box .menu{
+			color: red;
+		}
+		<!-- 子选择器-->
+		.box>.children{
+			color: rgb(139, 123, 123);
+		}
+		.s1+.s2{
+			color: rgb(65, 53, 170);
+		}
+		.s1~.s3{
+			color: red;
+		}
+
+		.wl:hover{
+			background-color: blueviolet;
+		}
+		ul li:nth-child(1){
+			font-size: 20px;
+		}
+
+		ul li:nth-child(odd){
+			font-size: 20px;
+		}
+		ul li:nth-child(2n+1){
+			background-color: beige;
+		}
+		ul li:first-child{
+			color: brown;
+		}
+		ul li:last-child{
+			color:	green;
+		}
+		.not div:not(.b){
+			color: red;
+		}
+		.wys{
+			content: "1";
+		}
+		.wys::after{
+			content: "之后";
+		}
+
+		.wys::before{
+			content: "之前";
 		}
 	</style>
 </head>
@@ -67,12 +115,40 @@
 			儿子
 		</div>
 	</div>
+	<br><br><br><br>
+	<h1>相邻兄弟选择器</h1>
 	<div class="s1">S1</div>
 	<div class="s2">S2</div>
 	<div class="s3">S3</div>
+	<br><br><br><br>
+	<h1>伪类选择器</h1>
+	<div class="wl">
+		伪类 
+	</div>
 
 
+	<ul>
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+		<li>6</li>
+		<li>7</li>
+		<li>8</li>
+	</ul>
+	<br><br><br><br>
+	<h1>否定伪类选择器</h1>
+	<div class="not">
+		<div class="b">123</div>
+		<div>123</div>
+		<div>123</div>
+		<div>123</div>
+	</div>
+	<h1>伪元素选择器</h1>
 
-	
+	<div class="wys">
+		伪元素选择器
+	</div>
 </body>
 </html>
