@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+
+<script>
+	console.log(name)
+	/* var
+		1.变量提升
+		2.函数级调用
+		3.window.name
+		4.全局变量
+	*/
+	var name = '小明'
+	console.log(name)
+
+
+	/* let 
+	1. 块级作用域
+	2. 使用let或const声明的变量不能在同一作用域内重复声明
+	*/
+	{
+		let name1 = '小红'
+		console.log(name1)
+	}
+	//console.log(name1)  //报错 let只作用于块级
+
+
+	// 常量
+	const PI = 3.14
+	console.log(PI)
+	//再修改会报错!!!
+	//PI = 3.15
+
+	// == 只对比值
+	// === 对比值和类型
+	console.log(12 == "12")
+	console.log(12 === "12")
+
+
+
+</script>
+</html>

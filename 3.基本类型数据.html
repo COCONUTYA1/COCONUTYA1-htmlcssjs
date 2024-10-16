@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	
+
+
+</body>
+
+
+<script>
+	const a = "123"
+	const a1 = Number(a)
+	const a2 = String(a1)
+	console.log(a,typeof a)
+	console.log(a1,typeof a1)
+	console.log(a2,typeof a2)
+
+	// 常用数据类型
+	const num = 123;    //Number
+	const str = "Hello, world!";  //String
+	const bool = true;	//Boolean
+	const obj = { key: "value" };  //Object
+	const n = null;		//Null
+	const arr = [1, 2, 3]; 		//Array
+	const und = undefined;		//Undefined
+
+	// 转换成字符串并保留两位小数
+	const a5 = 3.1415926
+	console.log(a5,a5.toFixed(2))
+
+	//将 a5 转换为整数并输出
+	console.log(a5,Number.parseInt(a5))
+
+
+	//判断是不是整数
+	console.log(Number.isInteger(1))
+	console.log(Number.isInteger(1.5))
+	console.log(Number.isInteger("xxxx"))
+	console.log(Number.isInteger(-10))
+
+
+	//取整之四舍五入
+	const a6 = 3.1415926
+	const a7 = 3.6
+	console.log(a6,Math.round(a6)) //3
+	console.log(a7,Math.round(a7)) //4
+	//取整之向上取整
+	console.log(a6,Math.ceil(a6))  //4
+	//取整之向下取整
+	console.log(a6,Math.floor(a6))  //3
+
+
+</script>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>博客前端页面</title>
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			margin: 0px;
+		}
+		.blog .nav{
+			width: 100%;
+			height: 60px;
+			background-color: rgba(255, 255, 255, 0.8);
+			position: fixed;
+			top: 0;
+			display: flex;
+			justify-content: center;
+		}
+		a{
+			color: #333;
+			text-decoration: none;
+		}
+
+		.blog .nav .container{
+			align-items: center;
+		}
+
+		.nav .left{
+			width: 10%;
+		}
+		.nav .left :nth-child(1){
+			font-size: 22px;
+		}
+		.nav .left :nth-child(2){
+			font-size: 12px;
+		}
+		.nav .center{
+			width: 70%;
+		}
+		.nav .center a{
+			margin-right: 20px;
+		}
+		.nav .right{
+			width: 20%;
+			text-align: right;
+		}
+
+
+		.container{
+			width: 1200px;
+			display: flex;
+		}
+		.banner img{
+			width: 100%;
+		}
+
+
+	</style>
+</head>
+
+<body>
+	<div class="blog">
+		<div class="nav">
+			<div class="container">
+				<div class="left logo">
+					<div>嘿嘿嘿</div>
+					<div>heiheihei</div>
+				</div>
+				<div class="center">
+					<a href="首页">首页</a>
+					<a href="新闻">新闻</a>
+					<a href="专题">专题</a>
+					<a href="搜索">搜索</a>
+				</div>
+				<div class="right">
+					<a href="登陆">登陆</a>
+				</div>
+			</div>
+		</div>
+		<div class="banner">
+			<img src="http://image.fengfengzhidao.com/gvb_1009/20231123092743__1123-e.png" alt="">
+			<div class="slogan">嘿嘿嘿个人博客</div>
+			<div class="abs">你好</div>
+		</div>
+		<main>
+			<div class="container">
+				<div class="left">
+					<div class="card news"></div>
+					<div class="card article"></div>
+				</div>
+				<div class="right">
+					<div class="card tags"></div>
+					<div class="card user_info"></div>
+				</div>
+			</div>
+		</main>
+		<fooder>
+		</footer>
+
+	</div>
+</body>
+
+</html>

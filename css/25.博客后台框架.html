@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>博客后台框架</title>
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			margin: 0;
+		}
+		.admin{
+			display: flex;
+		}
+
+		.admin  aside{
+			width: 240px;
+			height: 100vh;
+			background-color: white;
+			border-right: 1px solid rgb(208, 198, 198);
+		}
+
+		.admin  aside .logo{
+			height: 90px;
+			border-bottom: 1px solid rgb(208, 198, 198);
+			/* border-right: 1px solid rgb(208, 198, 198); */
+		}
+
+		.admin  main{
+			width: calc(100% - 240px);
+			height: 30vh;
+		}
+
+		.admin  main  .head{
+			height: 60px;
+			border-bottom: 1px solid rgb(208, 198, 198);
+		}
+		.admin  main  .tabs{
+			height: 30px;
+			border-bottom: 1px solid rgb(208, 198, 198);
+		}
+
+		.admin main .container{
+			height: calc(100vh - 90px);
+			overflow-y: auto;
+			background-color: rgb(69, 45, 45);
+			padding: 20px;
+		}
+
+		.admin main .container .xxx{
+			width: 200px;
+			height: 200vh;
+			background-color: white;
+		}
+	</style>
+</head>
+
+	<div class="admin">
+		<aside>
+			<div class="logo">博客后台 </div>
+			<div class="menu">menu</div>
+		</aside>
+		<main>
+			<div class="head">head</div>
+			<div class="tabs">tabs</div>
+			<div class="container">
+				<div class="xxx">xxx</div>
+			</div>
+		</main>
+	</div>
+</body>
+</html>
